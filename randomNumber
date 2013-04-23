@@ -7,6 +7,8 @@ public class randomNumber {
   	Scanner input = new Scanner( System.in );
   	
   	randomNumberGenerator randomNumber = new randomNumberGenerator();
+  	randomNumberGenerator randomNumber2 = new randomNumberGenerator(200, 300);
+  	
   	
   	System.out.println( "Please enter a low boundary: ");
   	int lowBoundary = input.nextInt();
@@ -17,7 +19,9 @@ public class randomNumber {
   	while ( turns < 10 )
   	{
   		++turns;
-  		System.out.printf( "%d\n", randomNumber.GetANumber_Between( lowBoundary, highBoundary ) );
+  		System.out.printf( " R1  %d\n", randomNumber.GetANumber( lowBoundary, highBoundary ) );
+  		System.out.printf( " R2  %d\n", randomNumber.GetANumber()  );
+  		System.out.printf( " R3 %d\n", randomNumber2.GetANumber() );
   	}
   
   	
