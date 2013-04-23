@@ -1,0 +1,29 @@
+public class randomNumberGenerator {
+  
+  public randomNumberGenerator()
+  {
+  	
+  }
+  
+  public randomNumberGenerator( int LoBound, int Hibound )
+  {
+  	
+  }
+  
+  public int GetANumber_Between_1_and_10()
+  {
+  	int getRandom;
+  	getRandom = 1 + (int)(Math.random()*10);
+  	return getRandom;
+
+  }
+  
+  public int GetANumber_Between( int low, int high )
+  {
+  	int getRandom;
+  	getRandom = low + (int)(Math.random()*high);
+  	return getRandom;
+
+  }
+  
+}
