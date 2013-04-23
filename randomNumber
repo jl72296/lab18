@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class randomNumber {
+  public static void main ( String [] args )
+  {
+  	int turns = 0;
+  	Scanner input = new Scanner( System.in );
+  	
+  	randomNumberGenerator randomNumber = new randomNumberGenerator();
+  	
+  	System.out.println( "Please enter a low boundary: ");
+  	int lowBoundary = input.nextInt();
+  	System.out.println( "Please enter a high boundary: " );
+  	int highBoundary = input.nextInt();
+  	
+  	
+  	while ( turns < 10 )
+  	{
+  		++turns;
+  		System.out.printf( "%d\n", randomNumber.GetANumber_Between( lowBoundary, highBoundary ) );
+  	}
+  
+  	
+  }
+}
