@@ -1,13 +1,27 @@
+
 public class randomNumberGenerator {
+
+  private int LowBound;
+  private int HighBound;
   
   public randomNumberGenerator()
   {
-  	
+  	LowBound = 1;
+  	HighBound = 10;
   }
   
-  public randomNumberGenerator( int LoBound, int Hibound )
+  public randomNumberGenerator( int LowerLimit, int UpperLimit )
   {
-  	
+  	LowBound = LowerLimit;
+  	HighBound = UpperLimit;
+  }
+  
+  public int GetANumber()
+  {
+  	int getRandom;
+  	getRandom = LowBound + (int)(Math.random()*HighBound);
+  	return getRandom;
+
   }
   
   public int GetANumber_Between_1_and_10()
@@ -18,7 +32,7 @@ public class randomNumberGenerator {
 
   }
   
-  public int GetANumber_Between( int low, int high )
+  public int GetANumber( int low, int high )
   {
   	int getRandom;
   	getRandom = low + (int)(Math.random()*high);
